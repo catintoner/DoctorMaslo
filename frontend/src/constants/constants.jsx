@@ -1,4 +1,5 @@
 const API_KEY = "29429d25-8534-41c8-84fd-0c7d1fc06876";
+const API_URL = "http://localhost:8080/api";
 
 const shopsInfo = {
   email: "grlait23@mail.ru",
@@ -40,7 +41,7 @@ const defaultParamsForMap = {
   defaultZoom: 9
 }
 
-export { API_KEY, shopsInfo, defaultParamsForMap };
+export { API_KEY, API_URL, shopsInfo, defaultParamsForMap };
 
 
 

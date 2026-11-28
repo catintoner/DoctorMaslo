@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+//TODO: delete from this, now for debug
+import { getProducts } from "../../services/productService.js";
 
 import "./MainPage.css";
 
@@ -67,7 +69,7 @@ function MainPage({ getMaskForNumber }) {
       </header>
       <main>
         <section className="main__productsBlock">
-          <h1 id="ourProducts" className="productsBlock__title">Наша продукция</h1>
+          <h1 id="ourProducts" className="productsBlock__title" onClick={getProducts}>Наша продукция</h1>
           <p className="productsBlock__subtitle">В наличии и под заказ</p>
           <div className="productsBlock__container">
             {photosArray.map((card) => {
